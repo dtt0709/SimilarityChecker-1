@@ -19,9 +19,9 @@ class SimilarityCheckerTest {
 
     @Test
     public void getLengthScore(){
-        Assertions.assertEquals(30, sc.getLengthScore("AA", "AAE"));
-        Assertions.assertEquals(20, sc.getLengthScore("AAABB", "BAA"));
-        Assertions.assertEquals(0, sc.getLengthScore("A", "BBB"));
-        Assertions.assertEquals(60, sc.getLengthScore("ASD", "DSA"));
+        assertEquals(30, sc.getLengthScore("AA", "AAE"));
+        assertEquals(20, sc.getLengthScore("AAABB", "BAA"));
+        assertEquals(0, sc.getLengthScore("A", "BBB"));
+        assertEquals(60, sc.getLengthScore("ASD", "DSA"));
     }
 }
